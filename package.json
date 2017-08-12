@@ -21,5 +21,11 @@
     "github": "^9.2.0",
     "inquirer": "^3.2.1",
     "key-safe": "0.0.0-pre.0"
-  }
+  },
+  "keywords": [
+    "github",
+    "api",
+    "cli",
+    "wrapper"
+  ]
 }

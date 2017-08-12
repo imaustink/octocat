@@ -8,6 +8,9 @@ Octocat CLI leverages the [`github`](https://www.npmjs.com/package/github) packa
 
 - $ `npm i octocat-cli -g`
 
+## Setup
+Upon running the first time, Octocat will ask for a [GiHub Access Token](https://github.com/settings/tokens). Once a token is entered, it will ask you to create a password. The token will be encrypted with this password, using `AES192`, and any subsequent runs will only need your password.
+
 ## Usage
 
 - $ `octocat -e repos -m getForOrg -d '{"org": "canjs"}' --pretty`
