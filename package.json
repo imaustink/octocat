@@ -19,6 +19,7 @@
     "bluebird": "^3.5.0",
     "commander": "^2.11.0",
     "github": "^9.2.0",
-    "inquirer": "^3.2.1"
+    "inquirer": "^3.2.1",
+    "key-safe": "0.0.0-pre.0"
   }
 }
