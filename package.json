@@ -1,0 +1,24 @@
+{
+  "name": "octocat-cli",
+  "version": "0.0.0-pre",
+  "description": "A CLI for the GitHub API",
+  "main": "index.js",
+  "scripts": {
+    "release:pre": "npm version prerelease && npm publish --tag=pre",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "octocat": "./bin/cli.js"
+  },
+  "author": "Austin Kurpuis",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "commander": "^2.11.0",
+    "github": "^9.2.0",
+    "inquirer": "^3.2.1"
+  }
+}
