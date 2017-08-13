@@ -9,15 +9,15 @@ function stringify(object, pretty){
 	}
 }
 
-module.exports = function({endpoint, method, data, meta, debug, pretty}){
-	auth().then(token => {
+module.exports = function({endpoint, method, data, meta, debug, pretty, pass}){
+	auth(pass).then(token => {
 		const github = new GitHub(token, {debug});
 		return github.execute(endpoint, method, data);
 	}).then(result => {
 		if(meta){
-			process.stdout.write(stringify(result, pretty));
+			process.stdout.write(stringify(result, pretty) + '\n');
 		}else{
-			process.stdout.write(stringify(result.data, pretty));
+			process.stdout.write(stringify(result.data, pretty) + '\n');
 		}
 	});
 };

@@ -13,8 +13,8 @@ Upon running the first time, Octocat will ask for a [GiHub Access Token](https:/
 
 ## Usage
 
-- $ `octocat -e repos -m getForOrg -d '{"org": "canjs"}' --pretty`
-	- Get all `repos` for `canjs` org and indent the output.
+- $ `octocat -e repos -m getForOrg -d '{"org": "skunkworks"}' --pretty`
+	- Get all `repos` for `skunkworks` org and indent the output.
 
 ## Options
 
@@ -23,6 +23,7 @@ Upon running the first time, Octocat will ask for a [GiHub Access Token](https:/
 -e, --endpoint [endpoint]  API endpoint, e.g. "repos"
 -m, --method [method]      API method, e.g. "getForOrg"
 -d, --data [data]          Data payload, e.g {org: 'skunkworks'}
+-p, --pass [password]      A password to unlock the token file
 --meta                     Include meta data (headers) in the output
 --debug                    Enabled logging
 --pretty                   Indent output
