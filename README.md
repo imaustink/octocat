@@ -1,5 +1,7 @@
 # Octocat
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/imaustink/octocat.svg)](https://greenkeeper.io/)
+
 Octocat is a CLI for the GitHub.com API. It's great for testing API calls and doing maintenance stuff.
 
 Octocat CLI leverages the [`github`](https://www.npmjs.com/package/github) package to handle API calls. For the complete API reference, visit their [docs](https://mikedeboer.github.io/node-github/).
