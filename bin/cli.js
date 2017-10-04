@@ -16,7 +16,9 @@ program
 
 // TODO check all inputs
 try{
-	program.data = JSON.parse(program.data);
+	if(program.data !== undefined){
+		program.data = JSON.parse(program.data);
+	}
 }catch(err){
 	console.error('Failed to parse data argument as JSON!');
 	process.exit(1);
